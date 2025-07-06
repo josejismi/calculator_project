@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="basic_calc.css">
+</head>
+<body>
+    <div class="calculator-container bg-gray-800 p-6 rounded-xl shadow-2xl">
+        <input type="text" id="display" class="w-full h-16 text-right text-4xl mb-4 p-2 rounded-lg bg-gray-900 text-white border-none focus:outline-none" value="" readonly>
+
+        <div class="grid grid-cols-4 gap-3">
+            <button class="calc-btn operator-btn bg-gray-600 hover:bg-gray-700 text-white text-2xl rounded-lg p-4" data-value="clear">C</button>
+            <button class="calc-btn operator-btn bg-gray-600 hover:bg-gray-700 text-white text-2xl rounded-lg p-4" data-value="square">x²</button>
+            <button class="calc-btn operator-btn bg-gray-600 hover:bg-gray-700 text-white text-2xl rounded-lg p-4" data-value="cube">x³</button>
+            <button class="calc-btn operator-btn bg-yellow-500 hover:bg-yellow-600 text-white text-2xl rounded-lg p-4" data-value="/">/</button>
+
+            <button class="calc-btn number-btn bg-gray-700 hover:bg-gray-600 text-white text-2xl rounded-lg p-4" data-value="7">7</button>
+            <button class="calc-btn number-btn bg-gray-700 hover:bg-gray-600 text-white text-2xl rounded-lg p-4" data-value="8">8</button>
+            <button class="calc-btn number-btn bg-gray-700 hover:bg-gray-600 text-white text-2xl rounded-lg p-4" data-value="9">9</button>
+            <button class="calc-btn operator-btn bg-yellow-500 hover:bg-yellow-600 text-white text-2xl rounded-lg p-4" data-value="*">*</button>
+
+            <button class="calc-btn number-btn bg-gray-700 hover:bg-gray-600 text-white text-2xl rounded-lg p-4" data-value="4">4</button>
+            <button class="calc-btn number-btn bg-gray-700 hover:bg-gray-600 text-white text-2xl rounded-lg p-4" data-value="5">5</button>
+            <button class="calc-btn number-btn bg-gray-700 hover:bg-gray-600 text-white text-2xl rounded-lg p-4" data-value="6">6</button>
+            <button class="calc-btn operator-btn bg-yellow-500 hover:bg-yellow-600 text-white text-2xl rounded-lg p-4" data-value="-">-</button>
+
+            <button class="calc-btn number-btn bg-gray-700 hover:bg-gray-600 text-white text-2xl rounded-lg p-4" data-value="1">1</button>
+            <button class="calc-btn number-btn bg-gray-700 hover:bg-gray-600 text-white text-2xl rounded-lg p-4" data-value="2">2</button>
+            <button class="calc-btn number-btn bg-gray-700 hover:bg-gray-600 text-white text-2xl rounded-lg p-4" data-value="3">3</button>
+            <button class="calc-btn operator-btn bg-yellow-500 hover:bg-yellow-600 text-white text-2xl rounded-lg p-4" data-value="+">+</button>
+
+            <button class="calc-btn number-btn col-span-2 bg-gray-700 hover:bg-gray-600 text-white text-2xl rounded-lg p-4" data-value="0">0</button>
+            <button class="calc-btn number-btn bg-gray-700 hover:bg-gray-600 text-white text-2xl rounded-lg p-4" data-value=".">.</button>
+            <button class="calc-btn equals-btn bg-blue-600 hover:bg-blue-700 text-white text-2xl rounded-lg p-4" data-value="=">=</button>
+        </div>
+    </div>
+
+    <script src="basic_calc.js"></script>
+</body>
+</html>
